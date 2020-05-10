@@ -8,6 +8,7 @@ String.prototype.replaceAll = function (search, replacement) {
 function cleanAccents(str) {
   return str
           .replaceAll("\\\\'e", "é")
+	  .replaceAll("\\\\\"o", "ö")
           .replaceAll("\\\\'c", "ć")
           .replaceAll("\\\\'E", "É")
           .replaceAll(",", " ")
